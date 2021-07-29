@@ -7,7 +7,7 @@ pipeline{
             
             sh '''
                 ssh -T ubuntu@54.219.134.239 bash -c "'
-                git https://github.com/SnePatel/node-app_hello-world.git
+                git clone https://github.com/SnePatel/node-app_hello-world.git
                 
                 '"
                 '''
