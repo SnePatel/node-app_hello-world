@@ -4,13 +4,14 @@ pipeline{
     stages{ 
         stage('Build'){ 
         steps{ 
-            
-            sh '''
+            git 'https://github.com/SnePatel/node-app_hello-world.git'
+            scp /var/lib/jenkins/workspace/NodeAppEC2/ ubuntu@54.219.134.239:/home/ubuntu/node-app_hello-world
+            /**sh '''
                 ssh -T ubuntu@54.219.134.239 bash -c "'
                 git clone https://github.com/SnePatel/node-app_hello-world.git
                 
                 '"
-                '''
+                '''**/
             
        }
       } 
