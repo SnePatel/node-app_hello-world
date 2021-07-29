@@ -33,8 +33,8 @@ pipeline{
                     ssh -T ubuntu@54.219.134.239 bash -c "'
                     cd node-app_hello-world 
                     pm2 start ecosystem.config.js
-                    cd
-                    rm -r node-app_hello-world
+                   
+                   
                     '"
                 '''
             }
