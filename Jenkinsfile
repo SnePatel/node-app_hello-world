@@ -22,7 +22,8 @@ pipeline{
                     ssh -T ubuntu@54.177.199.243 bash -c "'
                     pwd 
                     cd node-app_hello-world 
-                    npm i 
+                    npm i
+                    npm build
                     pwd
                     '"
                 '''
