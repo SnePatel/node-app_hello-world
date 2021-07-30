@@ -35,7 +35,7 @@ pipeline{
                     ssh -T ubuntu@54.177.199.243 bash -c "'
                     cd node-app_hello-world 
                     pm2 start ecosystem.config.js
-                   
+                    curl http://localhost:3000/
                    
                     '"
                 '''
